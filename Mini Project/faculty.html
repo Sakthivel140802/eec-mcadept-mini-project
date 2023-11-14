@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCA Department - College Name</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Reset some default styles and set a background color */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(/images/2.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        header {
+            background-color: #072241;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        .upcoming-events,
+        .news,
+        .courses,
+        .research,
+        .contact {
+            background-color: rgba(120, 184, 214, 0.233);
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .upcoming-events h2,
+        .news h2,
+        .courses h2,
+        .research h2,
+        .contact h2 {
+            color: #333;
+        }
+
+        .upcoming-events ul,
+        .news ul,
+        .courses ul,
+        .research ul,
+        .contact ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .upcoming-events li,
+        .news li,
+        .courses li,
+        .research li,
+        .contact li {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .social-media-icons a {
+            font-size: 24px;
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-media-icons a:hover {
+            color: #0056b3;
+        }
+        .team {
+    margin: 75px 0;
+    text-align: center;
+}
+
+.team h1 {
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #333;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.team h1::after {
+    content: '';
+    background: #333;
+    display: block;
+    height: 3px;
+    width: 150px;
+    margin: 10px auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.profile {
+    margin-top: 25px;
+}
+
+.profile .img-box {
+    display: block;
+    position: relative;
+    opacity: 1;
+}
+
+.profile .img-box img {
+    border-radius: 20px;
+    width: 360px;
+    height: 400px;
+}
+
+.profile h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.profile h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.img-box::after {
+    content: '';
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.img-box ul {
+    margin: 0;
+    padding: 20px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.img-box ul li {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 3px;
+    padding: 7px;
+    display: inline-block;
+}
+
+.img-box a {
+    color: #fff;
+}
+
+.img-box:hover::after {
+    opacity: 1;
+}
+
+.img-box:hover ul {
+    opacity: 1;
+}
+
+.img-box a:hover li {
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.img-box::after, .img-box ul, .img-box ul li {
+    transition: all 0.5s ease-in-out;
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>MCA Department</h1>
+    </header>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">DEPT MCA</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="faculty.html">Faculties</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="team">
+        <div class="container">
+            <h1>OUR FACULTIES</h1>
+            <div class="row">
+                <div class="col-md-4 pr-1 profile text-center">
+                    <div class="img-box">
+                        <img src="/images/staff1.avif " class="img-responsive" alt="staff img">
+                            <ul>
+                                <a href=""><li><i class="fa fa-facebook-f"></i></li></a>
+                                <a href=""><li><i class="fa fa-twitter"></i></li></a>
+                                <a href=""><li><i class="fa fa-linkedin"></i></li></a>
+                            </ul>
+                    </div>
+                    <h2>Nageswaran M K</h2>
+                    <h3>Head of the department</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illo explicabo corporis, consequuntur consectetur excepturi cupiditate possimus quaerat reprehenderit. Placeat.</p>
+                </div>
+                <div class="col-md-4 pr-1 profile text-center">
+                    <div class="img-box">
+                        <img src="/images/staff1.avif " class="img-responsive" alt="staff img">
+                            <ul>
+                                <a href=""><li><i class="fa fa-facebook-f"></i></li></a>
+                                <a href=""><li><i class="fa fa-twitter"></i></li></a>
+                                <a href=""><li><i class="fa fa-linkedin"></i></li></a>
+                            </ul>
+                    </div>
+                    <h2>Nageswaran M K</h2>
+                    <h3>Head of the department</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illo explicabo corporis, consequuntur consectetur excepturi cupiditate possimus quaerat reprehenderit. Placeat.</p>
+                </div>
+                <div class="col-md-4 pr-2 profile text-center">
+                    <div class="img-box">
+                        <img src="/images/staff2.avif " class="img-responsive" alt="staff img">
+                            <ul>
+                                <a href=""><li><i class="fa fa-facebook-f"></i></li></a>
+                                <a href=""><li><i class="fa fa-twitter"></i></li></a>
+                                <a href=""><li><i class="fa fa-linkedin"></i></li></a>
+                            </ul>
+                    </div>
+                    <h2>Dr.U.Sridevi</h2>
+                    <h3>Assistant Proffessor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illo explicabo corporis, consequuntur consectetur excepturi cupiditate possimus quaerat reprehenderit. Placeat.</p>
+                </div>
+                <div class="col-md-4 pr-3 profile text-center">
+                    <div class="img-box">
+                        <img src="/images/staff3.jpg " class="img-responsive" alt="staff img">
+                            <ul>
+                                <a href=""><li><i class="fa fa-facebook-f"></i></li></a>
+                                <a href=""><li><i class="fa fa-twitter"></i></li></a>
+                                <a href=""><li><i class="fa fa-linkedin"></i></li></a>
+                            </ul>
+                    </div>
+                    <h2>Deepashri</h2>
+                    <h3>Assistant Proffessor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illo explicabo corporis, consequuntur consectetur excepturi cupiditate possimus quaerat reprehenderit. Placeat.</p>
+                </div>
+                
+                <div class="col-md-4 pr-1 profile text-center">
+                    <div class="img-box">
+                        <img src="/images/staff4.avif " class="img-responsive" alt="staff img">
+                            <ul>
+                                <a href=""><li><i class="fa fa-facebook-f"></i></li></a>
+                                <a href=""><li><i class="fa fa-twitter"></i></li></a>
+                                <a href=""><li><i class="fa fa-linkedin"></i></li></a>
+                            </ul>
+                    </div>
+                    <h2>Kavitha</h2>
+                    <h3>Assistant Proffessor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illo explicabo corporis, consequuntur consectetur excepturi cupiditate possimus quaerat reprehenderit. Placeat.</p>
+                    </div>
+                    <div class="col-md-4 pr-2 profile text-center">
+                        <div class="img-box">
+                            <img src="/images/staff5.webp " class="img-responsive" alt="staff img">
+                                <ul>
+                                    <a href=""><li><i class="fa fa-facebook-f"></i></li></a>
+                                    <a href=""><li><i class="fa fa-twitter"></i></li></a>
+                                    <a href=""><li><i class="fa fa-linkedin"></i></li></a>
+                                </ul>
+                        </div>
+                        <h2>Yasodha</h2>
+                        <h3>Assistant Proffessor</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illo explicabo corporis, consequuntur consectetur excepturi cupiditate possimus quaerat reprehenderit. Placeat.</p>
+                    </div>
+                    <div class="col-md-4 pr-3 profile text-center">
+                        <div class="img-box">
+                            <img src="/images/staff6.avif " class="img-responsive" alt="staff img">
+                                <ul>
+                                    <a href=""><li><i class="fa fa-facebook-f"></i></li></a>
+                                    <a href=""><li><i class="fa fa-twitter"></i></li></a>
+                                    <a href=""><li><i class="fa fa-linkedin"></i></li></a>
+                                </ul>
+                        </div>
+                        <h2>**********</h2>
+                        <h3>Lab Assistant</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illo explicabo corporis, consequuntur consectetur excepturi cupiditate possimus quaerat reprehenderit. Placeat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-primary text-white py-4">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <p>&copy; Excel Engineering College - MCA Department</p>
+                  <p>123 College Street, Campus City, State, ZIP Code</p>
+              </div>
+              <div class="col-md-6 text-center">
+                  <div class="social-media-icons">
+                      <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+</body>
+
+</html>

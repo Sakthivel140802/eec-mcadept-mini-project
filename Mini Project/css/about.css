@@ -1,0 +1,139 @@
+/* Reset some default styles and set a background color */
+body {
+    margin: 0;
+    padding: 0;
+    padding: 20px;
+    background-image: url(mca1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+
+}
+
+img.center {
+    display: block; /* Make the image a block-level element */
+    margin: 0 auto; /* Center align the image horizontally */
+    border: 2px;
+    width: min-content;
+    height: min-content;
+}
+h1{
+    font-family: 'Lucida Sans' ;
+    font-size: 30px;
+    color: #3314a1;
+    align-content: center;
+    padding-left: 30px;
+}
+.cont{
+    background-color: rgba(91, 90, 94, 0.244);
+}
+h1:hover {
+    animation: hoverDelay 0.5s ease-in-out; /* Add a delay of 0.5 seconds with ease-in-out timing function */
+    color: #FF5722; /* Change the text color on hover */
+}
+.cont p{
+    border: 2px;
+    color: #030303;
+    font-size: 18px;
+    font-family: 'Times New Roman';
+    padding-left: 40px;
+    text-indent: 25px;
+
+}
+.about{
+    background-color: rgba(129, 122, 78, 0.5);
+}
+.hodmsg{
+    background-color: rgba(91, 90, 94, 0.244);
+    text-decoration: white;
+}
+
+/* Style the header section */
+header {
+    background-color: #072241;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Style the main content section */
+.main-content {
+    padding: 20px;
+}
+
+/* Style the upcoming events and news sections */
+.upcoming-events, .news {
+    background-color:rgba(120, 184, 214, 0.233);;
+    padding: 20px;
+    margin: 20px;
+}
+
+.upcoming-events h2, .news h2 {
+    color: #333;
+}
+
+.upcoming-events ul, .news ul {
+    list-style: none;
+    padding: 0;
+}
+
+.upcoming-events li, .news li {
+    margin-bottom: 20px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* Reset some default styles and set a background color */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/images/2.jpg);
+    background-size: cover; /* This will make the image cover the entire viewport */
+    background-attachment: fixed; 
+    font-family: Arial, sans-serif;
+}
+
+/* Rest of your CSS styles */
+/* ... */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }

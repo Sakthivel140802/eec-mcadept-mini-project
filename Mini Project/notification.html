@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add Font Awesome for download icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>/* styles.css */
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        #notifications {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .notification {
+            margin-bottom: 15px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .notification:hover {
+            transform: scale(1.02);
+        }
+        
+        .exam {
+            border-color: #3498db;
+            background-color: #eaf2f8;
+        }
+        
+        .assignment {
+            border-color: #e67e22;
+            background-color: #fbe8a6;
+        }
+        
+        .fee {
+            border-color: #27ae60;
+            background-color: #d4f5d0;
+        }
+        
+        .result {
+            border-color: #e74c3c;
+            background-color: #f9d1d0;
+        }
+        
+        /* Modal Styles */
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            border-radius: 8px;
+            width: 80%;
+            position: relative;
+        }
+        
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .close:hover {
+            color: black;
+        }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 600px) {
+            #notifications {
+                width: 90%;
+            }
+            .modal-content {
+                width: 100%;
+            }
+        }
+        
+
+        /*stu_login.css */
+
+        /* Navbar styles */
+.navbar {
+    background-color: #0073e6;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+/* Profile section styles */
+.profile {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Logout button styles */
+#logout {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logout:hover {
+    background-color: #d32f2f;
+}
+
+/* Notifications section styles */
+.notifications {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.notifications h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 30px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.social-media-icons a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-media-icons a:hover {
+    color: #0056b3;
+}
+
+
+    </style>*/
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Welcome Student</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/stu_login.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/notification.html">Notifications</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Semesters
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/semester1.html">Semester-1</a>
+                            <a class="dropdown-item" href="#">Semester-2</a>
+                            <a class="dropdown-item" href="#">Semester-3</a>
+                            <a class="dropdown-item" href="#">Semester-4</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <div id="notifications">
+        <h1>Notifications</h1>
+    
+        <div class="notification exam" onclick="showDetails('Exam', 'Math Exam on November 20, 2023.')">
+            <strong>Exam:</strong> Math Exam on November 20, 2023.
+        </div>
+    
+        <div class="notification assignment" onclick="showDetails('Assignment', 'Submit History essay by November 25, 2023.')">
+            <strong>Assignment:</strong> Submit History essay by November 25, 2023.
+        </div>
+    
+        <div class="notification fee" onclick="showDetails('Fee Due Date', 'Payment for the current semester is due on December 1, 2023.')">
+            <strong>Fee Due Date:</strong> Payment for the current semester is due on December 1, 2023.
+        </div>
+    
+        <div class="notification result" onclick="showDetails('Result', 'Chemistry exam results are available. Check your grades.')">
+            <strong>Result:</strong> Chemistry exam results are available. Check your grades.
+        </div>
+    </div>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-title"></div>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+    
+ <!-- Footer -->
+ <footer class="bg-primary text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; Excel Engineering College - MCA Department</p>
+                <p>123 College Street, Campus City, State, ZIP Code</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="social-media-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    
+<script>
+    // You can add JavaScript functions for additional interactivity here
+    // notifications.js
+
+// Function to show a confirmation when a notification is clicked
+function showConfirmation(type) {
+    alert(`You clicked on ${type} notification. More details and actions can be added.`);
+}
+
+// Add click event listeners to each notification
+document.addEventListener('DOMContentLoaded', function () {
+    const examNotification = document.querySelector('.exam');
+    const assignmentNotification = document.querySelector('.assignment');
+    const feeNotification = document.querySelector('.fee');
+    const resultNotification = document.querySelector('.result');
+
+    examNotification.addEventListener('click', function () {
+        showConfirmation('Exam');
+    });
+
+    assignmentNotification.addEventListener('click', function () {
+        showConfirmation('Assignment');
+    });
+
+    feeNotification.addEventListener('click', function () {
+        showConfirmation('Fee Due Date');
+    });
+
+    resultNotification.addEventListener('click', function () {
+        showConfirmation('Result');
+    });
+});
+
+</script>
+
+</body>
+</html>

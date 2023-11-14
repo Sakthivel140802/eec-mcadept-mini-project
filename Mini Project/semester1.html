@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester 1 Notes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Navbar styles */
+        .navbar {
+            background-color: #0073e6;
+            padding: 10px 0;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #fff;
+        }
+
+        .navbar-nav .nav-item {
+            margin-right: 10px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #0056b3;
+        }
+
+        /* Container styles */
+        .container {
+            margin-top: 10px;
+            margin-bottom: 40px; /* Adjusted margin for the footer */
+        }
+
+        /* Subject list styles */
+        .subject {
+            margin-bottom: 20px;
+        }
+
+        .subject h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #0073e6;
+        }
+
+        .unit {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .unit li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 8px;
+            padding: 10px;
+            background-color: #fff;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .unit li:hover {
+            transform: scale(1.02);
+        }
+
+        .unit li a {
+            text-decoration: none;
+            color: #0073e6;
+        }
+
+        .unit img {
+            max-width: 60px;
+            max-height: 60px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 30px 0;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .social-media-icons a {
+            font-size: 24px;
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-media-icons a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Welcome Student</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/stu_login.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/notification.html">Notifications</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Semesters
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Semester-1</a>
+                            <a class="dropdown-item" href="#">Semester-2</a>
+                            <a class="dropdown-item" href="#">Semester-3</a>
+                            <a class="dropdown-item" href="#">Semester-4</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+
+        <!-- Semester 1 Notes -->
+        <div class="subject">
+            <h2>Semester 1 Notes</h2>
+            <ul class="unit">
+                <!-- Subject 1 -->
+                <li>
+                    <img src="subject1_image.jpg" alt="Subject 1 Image">
+                    <span>Subject 1 - Unit 1</span>
+                    <a href="/oose.pdf" target="_blank" download><i class="fas fa-download"></i></a>
+                </li>
+                <li>
+                    <img src="subject1_image.jpg" alt="Subject 1 Image">
+                    <span>Subject 1 - Unit 2</span>
+                    <a href="subject1_note2.pdf" target="_blank" download><i class="fas fa-download"></i></a>
+                </li>
+                <!-- Add more units for Subject 1 if needed -->
+
+                <!-- Subject 2 -->
+                <li>
+                    <img src="subject2_image.jpg" alt="Subject 2 Image">
+                    <span>Subject 2 - Unit 1</span>
+                    <a href="subject2_note1.pdf" target="_blank" download><i class="fas fa-download"></i></a>
+                </li>
+                <li>
+                    <img src="subject2_image.jpg" alt="Subject 2 Image">
+                    <span>Subject 2 - Unit 2</span>
+                    <a href="subject2_note2.pdf" target="_blank" download><i class="fas fa-download"></i></a>
+                </li>
+                <!-- Add more units for Subject 2 if needed -->
+
+                <!-- Subject 3 -->
+                <li>
+                    <img src="subject3_image.jpg" alt="Subject 3 Image">
+                    <span>Subject 3 - Unit 1</span>
+                    <a href="subject3_note1.pdf" target="_blank" download><i class="fas fa-download"></i></a>
+                </li>
+                <li>
+                    <img src="subject3_image.jpg" alt="Subject 3 Image">
+                    <span>Subject 3 - Unit 2</span>
+                    <a href="subject3_note2.pdf" target="_blank" download><i class="fas fa-download"></i></a>
+                </li>
+                <!-- Add more units for Subject 3 if needed -->
+
+                <!-- Subject 4 -->
+                <li>
+                    <img src="subject4_image.jpg" alt="Subject 4 Image">
+                    <span>Subject 4 - Unit 1</span>
+                    <a href="subject4_note1.pdf" target="_blank" download><i class="fas fa-download"></i></a>
+                </li>
+                <li>
+                    <img src="subject4_image.jpg" alt="Subject 4 Image">
+                    <span>Subject 4 - Unit 2</span>
+                    <a href="subject4_note2.pdf" target="_blank" download><i class="fas fa-download"></i></a>
+                </li>
+                <!-- Add more units for Subject 4 if needed -->
+
+                <!-- Subject 5 -->
+                <li>
+                    <img src="subject5_image.jpg" alt="Subject 5 Image">
+                    <span>Subject 5 - Unit 1</span>
+                    <a href="subject5_note1.pdf" target="_blank" download><i class="fas fa-download"></i></a>
+                </li>
+                <li>
+                    <img src="subject5_image.jpg" alt="Subject 5 Image">
+                    <span>Subject 5 - Unit 2</span>
+                    <a href="subject5_note2.pdf" target="_blank" download><i class="fas fa-download"></i></a>
+                </li>
+                <!-- Add more units for Subject 5 if needed -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; Excel Engineering College - MCA Department</p>
+                    <p>123 College Street, Campus City, State, ZIP Code</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="social-media-icons">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCA Department - College Name</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Reset some default styles and set a background color */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(/images/2.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        header {
+            background-color: #072241;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        .upcoming-events,
+        .news,
+        .courses,
+        .research,
+        .contact {
+            background-color: rgba(120, 184, 214, 0.233);
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .upcoming-events h2,
+        .news h2,
+        .courses h2,
+        .research h2,
+        .contact h2 {
+            color: #333;
+        }
+
+        .upcoming-events ul,
+        .news ul,
+        .courses ul,
+        .research ul,
+        .contact ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .upcoming-events li,
+        .news li,
+        .courses li,
+        .research li,
+        .contact li {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .social-media-icons a {
+            font-size: 24px;
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-media-icons a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>MCA Department</h1>
+    </header>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">DEPT MCA</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="faculty.html">Faculties</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="main-content">
+        <h2>Welcome to the MCA Department</h2>
+        <p>We are dedicated to providing high-quality education and fostering a strong academic community.</p>
+    </section>
+
+    <section class="upcoming-events">
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li>
+                <h3>Web Development Workshop</h3>
+                <p>Date: DEC 15, 2023</p>
+            </li>
+            <li>
+                <h3>Career Fair</h3>
+                <p>Date: NOV 20, 2023</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="courses">
+        <h2>Our Courses</h2>
+        <ul>
+            <li>
+                <h3>Master of Computer Applications (MCA)</h3>
+                <p>Duration: 3 Years</p>
+            </li>
+            <li>
+                <h3>Postgraduate Diploma in Advanced Computing (PG-DAC)</h3>
+                <p>Duration: 1 Year</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="research">
+        <h2>Research Opportunities</h2>
+        <ul>
+            <li>
+                <h3>Research Lab on Artificial Intelligence</h3>
+                <p>Explore cutting-edge research in AI and machine learning.</p>
+            </li>
+            <li>
+                <h3>Data Science Innovation Center</h3>
+                <p>Join our center to work on impactful projects in data science.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <ul>
+            <li>
+                <h3>Department Office</h3>
+                <p>Email: mca.department@example.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </li>
+            <li>
+                <h3>Visit Us</h3>
+                <p>123 College Street, Campus City, State, ZIP Code</p>
+            </li>
+        </ul>
+    </section>
+
+    <footer class="bg-primary text-white py-4">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <p>&copy; Excel Engineering College - MCA Department</p>
+                  <p>123 College Street, Campus City, State, ZIP Code</p>
+              </div>
+              <div class="col-md-6 text-center">
+                  <div class="social-media-icons">
+                      <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+</body>
+
+</html>

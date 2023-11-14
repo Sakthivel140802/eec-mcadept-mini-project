@@ -1,0 +1,98 @@
+/* Reset some default styles and set a background color */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header section */
+header {
+    background-color: #072241;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Style the main content section */
+.main-content {
+    padding: 20px;
+}
+
+/* Style the upcoming events and news sections */
+.upcoming-events, .news {
+    background-color:rgba(120, 184, 214, 0.233);;
+    padding: 20px;
+    margin: 20px;
+}
+
+.upcoming-events h2, .news h2 {
+    color: #333;
+}
+
+.upcoming-events ul, .news ul {
+    list-style: none;
+    padding: 0;
+}
+
+.upcoming-events li, .news li {
+    margin-bottom: 20px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* Reset some default styles and set a background color */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/images/2.jpg);
+    background-size: cover; /* This will make the image cover the entire viewport */
+    background-attachment: fixed; 
+    font-family: Arial, sans-serif;
+}
+
+/* Rest of your CSS styles */
+/* ... */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+ 

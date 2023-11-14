@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Student Registration Form</h1>
+        <form>
+            <div class="form-group">
+                <label for="studentName">Student Name</label>
+                <input type="text" class="form-control" id="studentName" name="studentName" required placeholder="Enter Student Name" maxlength="100">
+            </div>
+
+            <div class="form-group">
+                <label for="registerNo">Register Number</label>
+                <input type="text" class="form-control" id="registerNo" name="registerNo" required placeholder="Enter Register Number" maxlength="30">
+            </div>
+
+            <div class="form-group">
+                <label for="rollNo">Roll Number</label>
+                <input type="text" class="form-control" id="rollNo" name="rollNo" required placeholder="Enter Roll Number" maxlength="30">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" required placeholder="Enter Email Address">
+            </div>
+
+            <div class="form-group">
+                <label for="mobileNo">Mobile Number</label>
+                <input type="tel" class="form-control" id="mobileNo" name="mobileNo" required placeholder="Enter Mobile Number" pattern="[0-9]{10}">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea class="form-control" id="address" name="address" placeholder="Enter Address"></textarea>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="city" name="city" required placeholder="Enter City" maxlength="50">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="state">State</label>
+                    <input type="text" class="form-control" id="state" name="state" required placeholder="Enter State" maxlength="50">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="pinCode">Pin Code</label>
+                <input type="text" class="form-control" id="pinCode" name="pinCode" required placeholder="Enter Pin Code" pattern="[0-9]{6}">
+            </div>
+
+            <div class="form-group">
+                <label for="userName">User Name</label>
+                <input type="text" class="form-control" id="userName" name="userName" required placeholder="Enter User Name" maxlength="30">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required placeholder="Enter Password" maxlength="30">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+        </form>
+    </div>
+
+    <!-- Add Bootstrap JS and jQuery scripts at the end of the body for better performance -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>/* Reset some default styles for consistent rendering */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            margin-top: 30px;
+        }
+        
+        h1 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            padding: 8px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            background-color: #fff;
+            border: 2px solid #007bff;
+        }
+        
+        .form-group label {
+            font-weight: 600;
+        }
+        
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group textarea {
+            width: 100%;
+        }
+        
+        .form-row .form-group {
+            margin-bottom: 10px;
+        }
+        
+        .btn-primary,
+        .btn-secondary {
+            width: 100px;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #545b61;
+            border-color: #545b61;
+        }
+        </style>
+</body>
+</html>
